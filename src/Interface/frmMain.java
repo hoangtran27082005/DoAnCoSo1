@@ -25,6 +25,7 @@ import javazoom.jl.player.Player;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.GroupLayout;
 import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.border.EmptyBorder;
 
 public final class frmMain extends javax.swing.JFrame {
     ConnectSQL cn = new ConnectSQL();
@@ -225,6 +226,9 @@ public final class frmMain extends javax.swing.JFrame {
         jPanel2.setPreferredSize(new java.awt.Dimension(1280, 600));
 
         btnThietLap.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnThietLap.setContentAreaFilled(false);
+        btnThietLap.setFocusPainted(false);
+        btnThietLap.setBorder(new EmptyBorder(0,0,0,0));
         btnThietLap.setForeground(new java.awt.Color(51, 51, 51));
         btnThietLap.setIcon(new ImageIcon(AppConfig.getImageURL("Settings-L-icon.png"))); // NOI18N
         btnThietLap.setText("THIẾT LẬP");
@@ -236,6 +240,9 @@ public final class frmMain extends javax.swing.JFrame {
         });
 
         btnQuanLy.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnQuanLy.setContentAreaFilled(false);
+        btnQuanLy.setFocusPainted(false);
+        btnQuanLy.setBorder(new EmptyBorder(0,0,0,0));
         btnQuanLy.setForeground(new java.awt.Color(51, 51, 51));
         btnQuanLy.setIcon(new ImageIcon(AppConfig.getImageURL("icon-hoc-nau-an-Huong-nghiep-a-au-2015.png"))); // NOI18N
         btnQuanLy.setText("QUẢN LÝ");
@@ -248,6 +255,9 @@ public final class frmMain extends javax.swing.JFrame {
         });
 
         btnBanHang.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnBanHang.setContentAreaFilled(false);
+        btnBanHang.setFocusPainted(false);
+        btnBanHang.setBorder(new EmptyBorder(0,0,0,0));
         btnBanHang.setForeground(new java.awt.Color(51, 51, 51));
         btnBanHang.setIcon(new ImageIcon(AppConfig.getImageURL("sellicon.png"))); // NOI18N
         btnBanHang.setText("BÁN HÀNG");
@@ -261,6 +271,9 @@ public final class frmMain extends javax.swing.JFrame {
         });
 
         btnThongKe.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnThongKe.setContentAreaFilled(false);
+        btnThongKe.setFocusPainted(false);
+        btnThongKe.setBorder(new EmptyBorder(0,0,0,0));
         btnThongKe.setForeground(new java.awt.Color(51, 51, 51));
         btnThongKe.setIcon(new ImageIcon(AppConfig.getImageURL("thongke.png"))); // NOI18N
         btnThongKe.setText("THỐNG KÊ");
@@ -277,6 +290,9 @@ public final class frmMain extends javax.swing.JFrame {
         jpLayout.setLayout(new java.awt.BorderLayout());
 
         btnthoat.setFont(new java.awt.Font("Tahoma", 1, 9)); // NOI18N
+        btnthoat.setContentAreaFilled(false);
+        btnthoat.setFocusPainted(false);
+        btnthoat.setBorder(new EmptyBorder(0,0,0,0));
         btnthoat.setForeground(new java.awt.Color(0, 51, 0));
         btnthoat.setIcon(new ImageIcon(AppConfig.getImageURL("Logout.png"))); // NOI18N
         btnthoat.setText("Đăng xuất");
@@ -290,6 +306,9 @@ public final class frmMain extends javax.swing.JFrame {
         });
 
         btnTrangChu.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnTrangChu.setContentAreaFilled(false);
+        btnTrangChu.setFocusPainted(false);
+        btnTrangChu.setBorder(new EmptyBorder(0,0,0,0));
         btnTrangChu.setForeground(new java.awt.Color(51, 51, 51));
         btnTrangChu.setIcon(new ImageIcon(AppConfig.getImageURL("HOME.png"))); // NOI18N
         btnTrangChu.setText("TRANG CHỦ");
@@ -325,6 +344,9 @@ public final class frmMain extends javax.swing.JFrame {
         });
 
         btnSound.setIcon(new ImageIcon(AppConfig.getImageURL("Sound.png"))); // NOI18N
+        btnSound.setContentAreaFilled(false);
+        btnSound.setFocusPainted(false);
+        btnSound.setBorder(new EmptyBorder(0,0,0,0));
         btnSound.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSound.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -333,6 +355,9 @@ public final class frmMain extends javax.swing.JFrame {
         });
 
         btnmute.setIcon(new ImageIcon(AppConfig.getImageURL("mute.png"))); // NOI18N
+        btnmute.setContentAreaFilled(false);
+        btnmute.setFocusPainted(false);
+        btnmute.setBorder(new EmptyBorder(0,0,0,0));
         btnmute.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnmute.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -9,6 +9,7 @@ import javax.swing.GroupLayout.Alignment;
 import javax.swing.GroupLayout;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Color;
 import java.awt.Font;
@@ -29,18 +30,15 @@ public class frmLogIn extends javax.swing.JFrame {
     	   
         
         jPanel1.setLayout(null);
-        jPanel1.add(jLabel3);
         jPanel1.add(jLabel2);
         jPanel1.add(btnLogIn);
         jPanel1.add(btnExit);
         jPanel1.add(txtPassWord);
         jPanel1.add(txtUserName);
-        jPanel1.add(jLabel4);
         jPanel1.add(jLabel1);
-        jPanel1.add(jLabel5);
         
         JLabel lblNewLabel = new JLabel("");
-        lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ADMIN\\OneDrive\\Tài liệu\\Hình ảnh\\DoAnCoSo\\Purple Red Subtle Gradients Corporate Canva Banner (1).png"));
+        lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ADMIN\\OneDrive\\Tài liệu\\Hình ảnh\\DoAnCoSo\\login.png"));
         lblNewLabel.setBounds(-10, 10, 764, 398);
         jPanel1.add(lblNewLabel);
         
@@ -56,23 +54,21 @@ public class frmLogIn extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         txtUserName = new javax.swing.JTextField();
-        txtUserName.setBounds(281, 119, 237, 27);
-        jLabel4 = new javax.swing.JLabel();
-        jLabel4.setBounds(565, 120, 100, 50);
+        txtUserName.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 14));
+        txtUserName.setBounds(148, 119, 230, 35);
         jLabel1 = new javax.swing.JLabel();
         jLabel1.setBounds(10, 10, 309, 76);
         btnLogIn = new javax.swing.JButton();
-        btnLogIn.setBounds(283, 258, 120, 23);
+        btnLogIn.setIcon(new ImageIcon("C:\\Users\\ADMIN\\OneDrive\\Tài liệu\\Hình ảnh\\DoAnCoSo\\btn_Login.png"));
+        btnLogIn.setBounds(182, 240, 120, 34);
         jLabel2 = new javax.swing.JLabel();
-        jLabel2.setBounds(192, 125, 98, 14);
-        jLabel3 = new javax.swing.JLabel();
-        jLabel3.setBounds(196, 193, 94, 14);
-        jLabel5 = new javax.swing.JLabel();
-        jLabel5.setBounds(353, 67, 152, 19);
+        jLabel2.setIcon(new ImageIcon("C:\\Users\\ADMIN\\OneDrive\\Tài liệu\\Hình ảnh\\DoAnCoSo\\cover.png"));
+        jLabel2.setBounds(53, 119, 98, 98);
         btnExit = new javax.swing.JButton();
-        btnExit.setBounds(426, 258, 92, 23);
+        btnExit.setIcon(new ImageIcon("C:\\Users\\ADMIN\\OneDrive\\Tài liệu\\Hình ảnh\\DoAnCoSo\\btn_exit.png"));
+        btnExit.setBounds(350, 338, 76, 50);
         txtPassWord = new javax.swing.JPasswordField();
-        txtPassWord.setBounds(281, 187, 237, 27);
+        txtPassWord.setBounds(148, 177, 230, 35);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -85,13 +81,13 @@ public class frmLogIn extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setIcon(new ImageIcon(AppConfig.getImageURL("logginlogo.png"))); // NOI18N
-
         jLabel1.setIcon(new ImageIcon(AppConfig.getImageURL("Happy Coffee.png"))); // NOI18N
 
-        btnLogIn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnLogIn.setForeground(new java.awt.Color(102, 51, 0));
-        btnLogIn.setText("Đăng nhập");
+        btnLogIn.setFont(new Font("Tahoma", Font.BOLD, 13)); // NOI18N
+        btnLogIn.setContentAreaFilled(false);
+        btnLogIn.setFocusPainted(false);
+        btnLogIn.setBorder(new EmptyBorder(0,0,0,0));
+        btnLogIn.setForeground(new Color(255, 255, 255));
         btnLogIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogInActionPerformed(evt);
@@ -102,17 +98,11 @@ public class frmLogIn extends javax.swing.JFrame {
         jLabel2.setForeground(new Color(255, 255, 255));
         jLabel2.setText("Username");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel3.setForeground(new Color(255, 255, 255));
-        jLabel3.setText("Password");
-
-        jLabel5.setFont(new Font("Sitka Text", Font.BOLD | Font.ITALIC, 17)); // NOI18N
-        jLabel5.setForeground(new Color(255, 255, 255));
-        jLabel5.setText("Đăng nhập");
-
-        btnExit.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnExit.setForeground(new java.awt.Color(102, 51, 0));
-        btnExit.setText("Thoát");
+        btnExit.setFont(new Font("Tahoma", Font.BOLD, 13)); // NOI18N
+        btnExit.setContentAreaFilled(false);
+        btnExit.setFocusPainted(false);
+        btnExit.setBorder(new EmptyBorder(0,0,0,0));
+        btnExit.setForeground(new Color(255, 255, 255));
         btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnExitActionPerformed(evt);
@@ -179,9 +169,6 @@ public class frmLogIn extends javax.swing.JFrame {
     private javax.swing.JButton btnLogIn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField txtPassWord;
     private javax.swing.JTextField txtUserName;
